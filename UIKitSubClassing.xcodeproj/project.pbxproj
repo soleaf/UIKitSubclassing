@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7197343187D7F820049B3F1 /* MintMixButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F7197342187D7F820049B3F1 /* MintMixButton.m */; };
+		F7197346187D7F8C0049B3F1 /* MintMixLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7197345187D7F8C0049B3F1 /* MintMixLabel.m */; };
 		F7C5CCD418764FCC009270BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C5CCD318764FCC009270BB /* Foundation.framework */; };
 		F7C5CCD618764FCC009270BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C5CCD518764FCC009270BB /* CoreGraphics.framework */; };
 		F7C5CCD818764FCC009270BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C5CCD718764FCC009270BB /* UIKit.framework */; };
@@ -21,7 +23,6 @@
 		F7C5CCF518764FCD009270BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C5CCD718764FCC009270BB /* UIKit.framework */; };
 		F7C5CCFD18764FCD009270BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7C5CCFB18764FCD009270BB /* InfoPlist.strings */; };
 		F7C5CCFF18764FCD009270BB /* UIKitSubClassingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C5CCFE18764FCD009270BB /* UIKitSubClassingTests.m */; };
-		F7C5CD0B18764FE7009270BB /* MintMixButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C5CD0A18764FE7009270BB /* MintMixButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F7197341187D7F820049B3F1 /* MintMixButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MintMixButton.h; sourceTree = "<group>"; };
+		F7197342187D7F820049B3F1 /* MintMixButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MintMixButton.m; sourceTree = "<group>"; };
+		F7197344187D7F8C0049B3F1 /* MintMixLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MintMixLabel.h; sourceTree = "<group>"; };
+		F7197345187D7F8C0049B3F1 /* MintMixLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MintMixLabel.m; sourceTree = "<group>"; };
 		F7C5CCD018764FCC009270BB /* UIKitSubClassing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitSubClassing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C5CCD318764FCC009270BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F7C5CCD518764FCC009270BB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,8 +59,6 @@
 		F7C5CCFA18764FCD009270BB /* UIKitSubClassingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIKitSubClassingTests-Info.plist"; sourceTree = "<group>"; };
 		F7C5CCFC18764FCD009270BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F7C5CCFE18764FCD009270BB /* UIKitSubClassingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitSubClassingTests.m; sourceTree = "<group>"; };
-		F7C5CD0918764FE7009270BB /* MintMixButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MintMixButton.h; sourceTree = "<group>"; };
-		F7C5CD0A18764FE7009270BB /* MintMixButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MintMixButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +85,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7197340187D7F820049B3F1 /* SRC */ = {
+			isa = PBXGroup;
+			children = (
+				F7197341187D7F820049B3F1 /* MintMixButton.h */,
+				F7197342187D7F820049B3F1 /* MintMixButton.m */,
+				F7197344187D7F8C0049B3F1 /* MintMixLabel.h */,
+				F7197345187D7F8C0049B3F1 /* MintMixLabel.m */,
+			);
+			path = SRC;
+			sourceTree = "<group>";
+		};
 		F7C5CCC718764FCC009270BB = {
 			isa = PBXGroup;
 			children = (
-				F7C5CD0818764FD8009270BB /* SRC */,
+				F7197340187D7F820049B3F1 /* SRC */,
 				F7C5CCD918764FCC009270BB /* UIKitSubClassing */,
 				F7C5CCF818764FCD009270BB /* UIKitSubClassingTests */,
 				F7C5CCD218764FCC009270BB /* Frameworks */,
@@ -154,15 +168,6 @@
 				F7C5CCFB18764FCD009270BB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F7C5CD0818764FD8009270BB /* SRC */ = {
-			isa = PBXGroup;
-			children = (
-				F7C5CD0918764FE7009270BB /* MintMixButton.h */,
-				F7C5CD0A18764FE7009270BB /* MintMixButton.m */,
-			);
-			name = SRC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7C5CD0B18764FE7009270BB /* MintMixButton.m in Sources */,
+				F7197346187D7F8C0049B3F1 /* MintMixLabel.m in Sources */,
 				F7C5CCEA18764FCC009270BB /* ViewController.m in Sources */,
 				F7C5CCE418764FCC009270BB /* AppDelegate.m in Sources */,
 				F7C5CCE018764FCC009270BB /* main.m in Sources */,
+				F7197343187D7F820049B3F1 /* MintMixButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +480,7 @@
 				F7C5CD0418764FCD009270BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7C5CD0518764FCD009270BB /* Build configuration list for PBXNativeTarget "UIKitSubClassingTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +489,7 @@
 				F7C5CD0718764FCD009270BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
