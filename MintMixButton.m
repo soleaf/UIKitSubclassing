@@ -53,6 +53,46 @@
         
     }
     
+    // Linked ImageView
+    if (self.linkedImageView && self.linkedImageViewNormalImage && self.linkedImageViewHighlightedImage){
+        if (highlighted) {
+            self.linkedImageView.image = self.linkedImageViewHighlightedImage;
+        }
+        else {
+            self.linkedImageView.image = self.linkedImageViewNormalImage;
+        }
+        
+    }
+    
+}
+
+- (void)setSelected:(BOOL)selected
+{
+    [super setSelected:selected];
+    
+    if (selected)
+    {
+        
+        // Linked Label
+        if (self.linkedLabel && self.linkedLabelSelectedColor)
+            self.linkedLabel.textColor = self.linkedLabelSelectedColor;
+        
+        // Linked ImageView
+        if (self.linkedImageView && self.linkedImageViewSelectedImage)
+            self.linkedImageView.image = self.linkedImageViewSelectedImage;
+        
+    }
+    else
+    {
+        // Linked Label
+        if (self.linkedLabel && self.linkedLabelNormalColor)
+            self.linkedLabel.textColor = self.linkedLabelSelectedColor;
+        
+        // Linked ImageView
+        if (self.linkedImageView && self.linkedImageViewNormalImage)
+            self.linkedImageView.image = self.linkedImageViewNormalImage;
+        
+    }
 }
 
 @end

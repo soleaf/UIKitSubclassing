@@ -19,10 +19,18 @@
 // Highlighting Background Color
 @property UIColor *normalBackgroudColor;
 @property UIColor *highlightedBackgroudColor;
+@property UIColor *selectedBackgroudColor;
 
-/// Link Highlighting LabelColor
+/// Link Label
+@property UILabel *linkedLabel;
 @property UIColor *linkedLabelNormalColor;
 @property UIColor *linkedLabelHighlightedColor;
-@property UILabel *linkedLabel;
+@property UIColor *linkedLabelSelectedColor;
+
+// Link ImageView
+@property UIImageView *linkedImageView;
+@property UIImage *linkedImageViewNormalImage;
+@property UIImage *linkedImageViewHighlightedImage;
+@property UIImage *linkedImageViewSelectedImage;
 
 @end

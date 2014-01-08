@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>929E6D58-29F4-4AC3-B583-1D80FD08D2F9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UIKitSubClassing</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>582086EF-A0A4-4E07-A372-2F4984EBDB4C</key>
+		<string>https://github.com/soleaf/UIKitSubclassing.git</string>
+		<key>81A779D9-8453-40A1-AF4E-AB9FA7C9FD9C</key>
+		<string>https://github.com/soleaf/UIKitSubclassing.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UIKitSubClassing.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>582086EF-A0A4-4E07-A372-2F4984EBDB4C</key>
+		<string>../../../UIKitSubClassing</string>
+		<key>81A779D9-8453-40A1-AF4E-AB9FA7C9FD9C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/soleaf/UIKitSubclassing.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>81A779D9-8453-40A1-AF4E-AB9FA7C9FD9C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>81A779D9-8453-40A1-AF4E-AB9FA7C9FD9C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UIKitSubclassing</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>582086EF-A0A4-4E07-A372-2F4984EBDB4C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UIKitSubClassing</string>
+		</dict>
+	</array>
+</dict>
+</plist>
