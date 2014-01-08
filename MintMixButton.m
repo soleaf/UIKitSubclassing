@@ -20,13 +20,13 @@
 }
 
 /*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect
+ {
+ // Drawing code
+ }
+ */
 
 - (void) setHighlighted:(BOOL)highlighted {
     [super setHighlighted:highlighted];
@@ -47,6 +47,9 @@
         if (highlighted) {
             self.linkedLabel.textColor = self.linkedLabelHighlightedColor;
         }
+        else if(self.selected){
+            self.linkedLabel.textColor = self.linkedLabelSelectedColor;
+        }
         else {
             self.linkedLabel.textColor = self.linkedLabelNormalColor;
         }
@@ -57,6 +60,9 @@
     if (self.linkedImageView && self.linkedImageViewNormalImage && self.linkedImageViewHighlightedImage){
         if (highlighted) {
             self.linkedImageView.image = self.linkedImageViewHighlightedImage;
+        }
+        else if (self.selected) {
+            self.linkedImageView.image = self.linkedImageViewSelectedImage;
         }
         else {
             self.linkedImageView.image = self.linkedImageViewNormalImage;
