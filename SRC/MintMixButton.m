@@ -92,7 +92,7 @@
     {
         // Linked Label
         if (self.linkedLabel && self.linkedLabelNormalColor)
-            self.linkedLabel.textColor = self.linkedLabelSelectedColor;
+            self.linkedLabel.textColor = self.linkedLabelNormalColor;
         
         // Linked ImageView
         if (self.linkedImageView && self.linkedImageViewNormalImage)
