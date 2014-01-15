@@ -32,41 +32,48 @@
     [super setHighlighted:highlighted];
     
     // Background
-    if (self.highlightedBackgroudColor && self.normalBackgroudColor){
+    if (self.highlightedBackgroudColor){
         if (highlighted) {
             self.backgroundColor = self.highlightedBackgroudColor;
         }
-        else {
+        else  if (self.normalBackgroudColor){
             self.backgroundColor = self.normalBackgroudColor;
         }
+        else
+            self.backgroundColor = [UIColor clearColor];
         
     }
     
     // Linked Label
-    if (self.linkedLabel && self.linkedLabelNormalColor && self.linkedLabelHighlightedColor){
+    if (self.linkedLabel && self.linkedLabelHighlightedColor){
         if (highlighted) {
             self.linkedLabel.textColor = self.linkedLabelHighlightedColor;
         }
-        else if(self.selected){
+        else if(self.selected && self.linkedLabelSelectedColor){
             self.linkedLabel.textColor = self.linkedLabelSelectedColor;
         }
-        else {
+        else if (self.linkedLabelNormalColor){
             self.linkedLabel.textColor = self.linkedLabelNormalColor;
+        }
+        else{
+            self.linkedLabel.textColor = [UIColor blackColor];
         }
         
     }
     
     // Linked ImageView
-    if (self.linkedImageView && self.linkedImageViewNormalImage && self.linkedImageViewHighlightedImage){
+    if (self.linkedImageView && self.linkedImageViewHighlightedImage){
         if (highlighted) {
             self.linkedImageView.image = self.linkedImageViewHighlightedImage;
         }
-        else if (self.selected) {
+        else if (self.selected && self.linkedImageViewSelectedImage) {
             self.linkedImageView.image = self.linkedImageViewSelectedImage;
         }
-        else {
+        else if (self.linkedImageViewNormalImage) {
             self.linkedImageView.image = self.linkedImageViewNormalImage;
         }
+        else
+            self.linkedImageView.image = nil;
         
     }
     
